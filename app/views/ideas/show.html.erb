@@ -12,7 +12,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= image_tag(@idea.picture) %>
+  <%= image_tag(@idea.picture.variant(resize_to_limit: [100, 100])) %>
 </p>
 
 <%= link_to 'Edit', edit_idea_path(@idea) %> |
